@@ -1,0 +1,12 @@
+cryptography
+pyOpenSSL
+certifi
+requests
+argparse
+time
+Pool
+threading
+gevent
+shodan
+httplib2
+PySocks

@@ -26,7 +26,7 @@ ___
 **-安装**
 ```
 # 下载安装
-cd saucerframe
+cd YesPOC
 pip install -r requirement.txt 
 ```
 **-使用**

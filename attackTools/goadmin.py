@@ -1,5 +1,6 @@
 # -*-codeing = utf-8 -*-
 import os
+import re
 import time
 from multiprocessing import Pool
 
@@ -45,7 +46,7 @@ class myThread(threading.Thread):
 
 # 定义功能函数，访问固定url地址
 
-admin_list = ['admin','Admin','后台','管理','manage']
+admin_list = ['admin','Admin','后台','管理','manage','运营','登录','login','adm']
 admin_dir = ['/admin','/manage','/admin/login','/manage/login','/admin/index','/manage/index','/admin/login/index','/admin/login.php','/manage/index.php']
 def crawler(url_t,ts):
     url_ = url_t.replace('\n', '').replace('\r', '')
@@ -53,14 +54,16 @@ def crawler(url_t,ts):
         for adminDir in admin_dir:
             url = url_+adminDir
             requests.packages.urllib3.disable_warnings()
-            resuit = requests.get(url,headers=header,verify=False,timeout=10)
+            resuit = requests.get(url,headers=header,timeout=10)
             resuit_text = resuit.text
-            if len(resuit_text) > 500 and resuit.status_code <= 400:
+            ex = '<title>(.*?)</title>'
+            title = re.findall(ex, resuit_text, re.S)[0]
+            if resuit.status_code <= 399:
                 for admin in admin_list:
-                    if admin in resuit_text:
-                        print(f'{(time.strftime("%Y-%m-%d %H:%M:%S"))}   resuit: ', url)
+                    if admin in title:
+                        print(f'{(time.strftime("%Y-%m-%d %H:%M:%S"))}   resuit: ', url,title)
                         PocSuccess(url)
-                        break
+                break
 
 
     except Exception as e:
@@ -95,3 +98,5 @@ def goRun(txt,T):
     # 等待所有线程完成
     for t in threads:
         t.join()
+if __name__ == '__main__':
+    goRun("demo.txt",50)

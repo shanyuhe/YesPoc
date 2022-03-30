@@ -34,14 +34,13 @@ if __name__ == '__main__':
     parser.add_argument('-s', help='-s poc poc扫描 -s admin 后台探测 -s back 备份文件 -s test 存活测试')
     args = parser.parse_args()
     if (args.r != None and args.s =='poc'):
-        runpoc.goRun(args.r,T=5)
+        runpoc.goRun(args.r,T=50)
     elif(args.r != None and args.s == 'admin'):
-            goadmin.goRun(args.r, T=5)
+            goadmin.goRun(args.r, T=50)
     elif(args.r != None and args.s == 'back'):
-            gofzbk.goRun(args.r, T=5)
+            gofzbk.goRun(args.r, T=50)
     elif (args.r != None and args.s == 'test'):
-            goLiveTest.goRun(args.r, T=5)
-
+            goLiveTest.goRun(args.r, T=50)
 
 
 

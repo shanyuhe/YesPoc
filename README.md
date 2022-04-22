@@ -38,7 +38,7 @@ python yesPoc.py -h
   -s S        -s poc poc扫描 -s admin 后台探测 -s back 备份文件 -s test 存活测试
 ```
 
-**-扫描**
+**-简单任务**
 ```
 python yesPoc.py -u https://xxxx.com -poc 模块名称 # 使用指定模块扫描
 python yesPoc.py -u https://xxxx.com -poc all      # 使用全部模块扫描

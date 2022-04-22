@@ -53,7 +53,7 @@ python yesPoc.py -r test.txt -s test # 存活测试
 ___
 ## -POC编写
   | Module name | Update time|
-|﻿Apache-Flink-Web-Dashboard-RCE|-|
+|Apache-Flink-Web-Dashboard-RCE|-|
 |coremail_source_leak|-|
 |couchdb_unauth|-|
 |csbrute|-|

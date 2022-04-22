@@ -41,8 +41,11 @@ python yesPoc.py -h
 **-扫描**
 ```
 python yesPoc.py -u https://xxxx.com -poc 模块名称 # 使用指定模块扫描
-python yesPoc.py -u https://xxxx.com -poc 模块名称 # 使用全部模块扫描
+python yesPoc.py -u https://xxxx.com -poc all      # 使用全部模块扫描
+
+```
 **-批量任务**
+```
 python yesPoc.py -r test.txt -s poc # poc扫描
 python yesPoc.py -r test.txt -s admin # 后台探测
 python yesPoc.py -r test.txt -s back # 备份文件

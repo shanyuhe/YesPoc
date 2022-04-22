@@ -6,7 +6,7 @@ Copyright (c) saucerman (https://saucer-man.com)
 See the file 'LICENSE' for copying permission
 """
 
-from YESPoc.lib.core.datatype import AttribDict
+from lib.core.datatype import AttribDict
 # saucerframe paths
 paths = AttribDict()
 

@@ -241,3 +241,4 @@ def goRun(txt,T):
     # 等待所有线程完成
     for t in threads:
         t.join()
+

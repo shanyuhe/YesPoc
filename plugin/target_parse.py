@@ -40,4 +40,5 @@ def url2ip(url):
 # -->['14.215.177.39', '14.215.177.38']
 
 
- 
+if __name__ == '__main__':
+    print(url2ip('https://www.baidu.com'))

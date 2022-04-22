@@ -11,11 +11,6 @@ i = -1
 urls_txt = []
 header = {'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"}
 
-def logo():
-    print("\033[91m[+] Author\033[0m    : 一秋小叶")
-    print("\033[91m[+] Email\033[0m     : 2900180755@qq.com")
-    print("\033[91m[+] Github\033[0m    : https://github.com/shanyuhe")
-    time.sleep(3)
 
 def url_list(txt):
     global urls_txt
@@ -54,7 +49,7 @@ def crawler(url_t,ts):
         for adminDir in admin_dir:
             url = url_+adminDir
             requests.packages.urllib3.disable_warnings()
-            resuit = requests.get(url,headers=header,timeout=10)
+            resuit = requests.get(url,headers=header,timeout=10,verify=False)
             resuit_text = resuit.text
             ex = '<title>(.*?)</title>'
             title = re.findall(ex, resuit_text, re.S)[0]

@@ -9,11 +9,6 @@ urls_txt = []
 name_txt = ''
 header = {'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"}
 
-def logo():
-    print("\033[91m[+] Author\033[0m    : 一秋小叶")
-    print("\033[91m[+] Email\033[0m     : 2900180755@qq.com")
-    print("\033[91m[+] Github\033[0m    : https://github.com/shanyuhe")
-    time.sleep(3)
 
 def url_list(txt):
     global name_txt
@@ -52,7 +47,7 @@ def crawler(url_t,ts):
         if http_i == -1:
             try:
                 url = 'http://'+url_
-                req = requests.get(url, headers=header, timeout=20).status_code
+                req = requests.get(url, headers=header, timeout=20,verify=False).status_code
                 if req < 100000:
                     with open(name_txt, mode='a') as fp3:
                         fp3.write(url + '\n')
@@ -60,7 +55,7 @@ def crawler(url_t,ts):
             except Exception as e:
                 try:
                     url = 'https://' + url_
-                    req = requests.get(url, headers=header, timeout=20).status_code
+                    req = requests.get(url, headers=header, timeout=20,verify=False).status_code
                     if req < 100000:
                         with open(name_txt, mode='a') as fp3:
                             fp3.write(url + '\n')
@@ -68,7 +63,7 @@ def crawler(url_t,ts):
                 except Exception as e:
                     try:
                         url = 'http://www.' + url_
-                        req = requests.get(url, headers=header, timeout=20).status_code
+                        req = requests.get(url, headers=header, timeout=20,verify=False).status_code
                         if req < 100000:
                             with open(name_txt, mode='a') as fp3:
                                 fp3.write(url + '\n')
@@ -76,7 +71,7 @@ def crawler(url_t,ts):
                     except Exception as e:
                         try:
                             url = 'https://www.' + url_
-                            req = requests.get(url, headers=header, timeout=20).status_code
+                            req = requests.get(url, headers=header, timeout=20,verify=False).status_code
                             if req < 100000:
                                 with open(name_txt, mode='a') as fp3:
                                     fp3.write(url + '\n')
@@ -86,7 +81,7 @@ def crawler(url_t,ts):
 
 
         else: # 带协议的url
-            req = requests.get(url_, headers=header, timeout=20).status_code
+            req = requests.get(url_, headers=header, timeout=20,verify=False).status_code
             if req < 100000:
                 with open(name_txt, mode='a') as fp3:
                     fp3.write(url_ + '\n')
@@ -116,3 +111,5 @@ def goRun(txt,T):
         t.join()
 
 
+if __name__ == '__main__':
+    goRun('存活.txt',100)

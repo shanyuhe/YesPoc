@@ -51,10 +51,10 @@ python yesPoc.py -r test.txt -s back # 备份文件
 python yesPoc.py -r test.txt -s test # 存活测试
 ```
 ___
-## -POC编写
+## -更新日志
 | Module name        | Update time          | 
 | ------------- |:-------------:|
-| ﻿Apache-Flink-Web-Dashboard-RCE      |  -  | 
+| Apache-Flink-Web-Dashboard-RCE      |  -  | 
 | coremail_source_leak      |  -  | 
 | couchdb_unauth      |  -  | 
 | csbrute      |  -  | 
@@ -68,7 +68,6 @@ ___
 | CVE-2021-34473      |  -  | 
 | dahua      |  -  | 
 | discuz_rce      |  -  | 
-| env泄露      |  -  | 
 | eyou      |  -  | 
 | fastadmin_weak      |  -  | 
 | fw_oa_rce      |  -  | 
@@ -77,7 +76,6 @@ ___
 | hbgk      |  -  | 
 | hikvision      |  -  | 
 | juanvision      |  -  | 
-| laraverDeBug      |  -  | 
 | mongodb_unauth      |  -  | 
 | phpstudy_backdoor      |  -  | 
 | redis_unauth      |  -  | 
@@ -93,6 +91,8 @@ ___
 | weblogic_xmldecoder_exec      |  -  | 
 | wp_social_warfare_rce      |  -  | 
 | yapi_rce      |  -  | 
+| laraverDeBug      |  2022/04/22  | 
+| env泄露      |  2022/04/22  | 
 
 ___
 

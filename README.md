@@ -52,12 +52,48 @@ python yesPoc.py -r test.txt -s test # 存活测试
 ```
 ___
 ## -POC编写
-  | Module name | Update time|
 | Module name        | Update time          | 
 | ------------- |:-------------:|
-| 星期一      |G1008 | 
-|  星期二  | G1006      | 
-|  星期三   | G1007    | 
+| ﻿Apache-Flink-Web-Dashboard-RCE      |  -  | 
+| coremail_source_leak      |  -  | 
+| couchdb_unauth      |  -  | 
+| csbrute      |  -  | 
+| cve-2020-0796      |  -  | 
+| cve-2020-1938      |  -  | 
+| CVE-2020-5902      |  -  | 
+| CVE-2020-8813      |  -  | 
+| CVE-2021-22986      |  -  | 
+| CVE-2021-26084      |  -  | 
+| CVE-2021-26855      |  -  | 
+| CVE-2021-34473      |  -  | 
+| dahua      |  -  | 
+| discuz_rce      |  -  | 
+| env泄露      |  -  | 
+| eyou      |  -  | 
+| fastadmin_weak      |  -  | 
+| fw_oa_rce      |  -  | 
+| fw_sql      |  -  | 
+| genkins_unauth      |  -  | 
+| hbgk      |  -  | 
+| hikvision      |  -  | 
+| juanvision      |  -  | 
+| laraverDeBug      |  -  | 
+| mongodb_unauth      |  -  | 
+| phpstudy_backdoor      |  -  | 
+| redis_unauth      |  -  | 
+| seeyon      |  -  | 
+| test      |  -  | 
+| thinkcmf_shell      |  -  | 
+| thinkphp_rce      |  -  | 
+| tongda_rce      |  -  | 
+| vmware-vcenter      |  -  | 
+| weblogic_2019_48814      |  -  | 
+| weblogic_ssrf      |  -  | 
+| weblogic_weak_pass      |  -  | 
+| weblogic_xmldecoder_exec      |  -  | 
+| wp_social_warfare_rce      |  -  | 
+| yapi_rce      |  -  | 
+
 ___
 
 ## -POC编写

@@ -51,6 +51,14 @@ python yesPoc.py -r test.txt -s back # 备份文件
 python yesPoc.py -r test.txt -s test # 存活测试
 ```
 ___
+## -POC编写
+  | 星期        | 车次           | 时间  |
+| ------------- |:-------------:| -----:|
+| 星期一      |G1008 | 4:30 |
+|  星期二  | G1006      |  14:55 |
+|  星期三   | G1007    |   18:30 |
+
+___
 
 ## -POC编写
   poc简单例子[POC编写](https://github.com/saucer-man/saucerframe/wiki/poc%E7%BC%96%E5%86%99 "悬停显示")

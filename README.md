@@ -38,6 +38,8 @@ python yesPoc.py -h
   -h, --help  show this help message and exit
   -r R        导入文本
   -s S        -s poc poc扫描 -s admin 后台探测 -s back 备份文件 -s test 存活测试
+  -u          指定url
+  -poc        配合-u使用 -poc 模块名称 单个扫描 -poc all 使用全部模块进行扫描
 ```
 
 **-简单任务**

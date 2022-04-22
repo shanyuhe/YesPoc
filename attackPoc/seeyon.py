@@ -10,7 +10,7 @@ import base64
 import requests
 import hashlib
 from urllib.parse import urlparse
-from YESPoc.plugin.random_ua import get_random_ua
+from plugin.random_ua import get_random_ua
 
 def f_base64decode(cipherlist):
     base64list = 'gx74KW1roM9qwzPFVOBLSlYaeyncdNbI=JfUCQRHtj2+Z05vshXi3GAEuT/m8Dpk6'

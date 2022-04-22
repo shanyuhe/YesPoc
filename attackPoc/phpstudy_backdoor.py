@@ -14,7 +14,7 @@ https://mp.weixin.qq.com/s/t-P-n98ZydP3aSCdC0C9hQ
 
 
 import requests
-from YESPoc.plugin.target_parse import get_standard_url
+from plugin.target_parse import get_standard_url
 
 
 def poc(url):

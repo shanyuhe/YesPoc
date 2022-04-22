@@ -11,7 +11,7 @@ import gevent
 from gevent.queue import Queue
 import socket
 import ssl
-from YESPoc.lib.core.data import paths
+from lib.core.data import paths
 from urllib.parse import urlparse
 import traceback
 

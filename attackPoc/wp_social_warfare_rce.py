@@ -14,7 +14,7 @@ date:2019-05-11
 """
 
 import requests
-from YESPoc.plugin.random_ua import get_random_ua
+from plugin.random_ua import get_random_ua
 from urllib.parse import urlparse
 
 

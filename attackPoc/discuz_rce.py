@@ -7,7 +7,7 @@ See the file 'LICENSE' for copying permission
 """
 Discuz ML! V3.X 代码注入 https://www.anquanke.com/post/id/181887
 """
-from YESPoc.plugin.target_parse import get_standard_url
+from plugin.target_parse import get_standard_url
 import requests
 import re
 

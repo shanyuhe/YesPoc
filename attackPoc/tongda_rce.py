@@ -11,7 +11,7 @@ refer: https://github.com/fuhei/tongda_rce
 
 import requests
 import re
-from YESPoc.plugin.target_parse import get_standard_url
+from plugin.target_parse import get_standard_url
 
 
 def poc(url):

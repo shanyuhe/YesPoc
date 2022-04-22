@@ -12,7 +12,7 @@ See the file 'LICENSE' for copying permission
 
 import random
 import time
-from YESPoc.lib.core.Request import request
+from lib.core.Request import request
 import traceback
 
 def poc(url):

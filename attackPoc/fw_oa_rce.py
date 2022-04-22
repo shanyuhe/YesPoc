@@ -9,7 +9,7 @@ See the file 'LICENSE' for copying permission
 泛微OA E-cology 远程代码执行漏洞 CNVD-2019-32204
 """
 import requests
-from YESPoc.plugin.target_parse import get_standard_url
+from plugin.target_parse import get_standard_url
 
 url_payload1 = "/bsh.servlet.BshServlet"
 url_payload2 = "/weaver/bsh.servlet.BshServlet"

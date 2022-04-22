@@ -2,7 +2,7 @@
 
 import requests
 import re
-from YESPoc.plugin.target_parse import get_standard_url
+from plugin.target_parse import get_standard_url
 from requests.auth import HTTPBasicAuth
 
 def poc(url):

@@ -1,5 +1,5 @@
 import requests
-from YESPoc.plugin.target_parse import get_standard_url
+from plugin.target_parse import get_standard_url
 
 # CVE-2017-7253 大华摄像头密码后门
 

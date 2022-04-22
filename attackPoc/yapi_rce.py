@@ -10,7 +10,7 @@ See the file 'LICENSE' for copying permission
 
 from urllib.parse import urlparse
 import random, requests, json, base64
-from YESPoc.plugin.target_parse import get_standard_url
+from plugin.target_parse import get_standard_url
 
 requests.packages.urllib3.disable_warnings()
 

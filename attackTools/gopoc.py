@@ -5,7 +5,8 @@ from multiprocessing import Pool
 import requests
 import threading
 import sys
-otherStyleTime = time.strftime("%Y-%m-%d %H:%M:%S")
+from lib.Tools.PrintLog import PrintLog
+from lib.Tools.Time_Log import time_s
 sys.path.insert(0, './YESPoc')
 sys.path.insert(0, './attackPoc')
 i = -1
@@ -33,11 +34,15 @@ class myThread(threading.Thread):
         while True:
             try:
                 url = return_url()
-                print(f"{otherStyleTime }   {self.name} start: ",url)
+                log = f"{time_s()}   {self.name} start: " + url
+                print('\r' + '                                                                                                                      ',end='')
+                PrintLog(log)
                 crawler(url,self.name)
             except:
                 break
-        print(f"{otherStyleTime }   Thread exit: " + self.name)
+        log = f"{time_s()}   Thread exit: " + self.name
+        print('\r'+'                                                                                                                                ',end='')
+        PrintLog(log)
 
 
 # 定义功能函数，访问固定url地址
@@ -49,7 +54,9 @@ def crawler(url_t,ts):
         pocPool(url_)
 
     except Exception as e:
-        print(f"{otherStyleTime }   {ts} ==> {url_} ==> Error")
+        log = f"{time_s()}   {ts} ==> {url_} ==> Error"
+        print('\r'+'                                                                                                                                ',end='')
+        PrintLog(log)
 
 
 def PocSuccess(success):
@@ -63,11 +70,15 @@ def attack_Poc(poc_url):
     requests.packages.urllib3.disable_warnings()
     module = __import__(f'attackPoc.{module_name}', fromlist=['poc'])
     result = module.poc(url)
-    pcosuccess = f"{otherStyleTime }   【{module_name}】{url} True"
     if result == True:
-        print(pcosuccess)
+        pcosuccess = f"{time_s()}   【{module_name}】{url} True"
+        print('\r'+'                                                                                                                                ',end='')
+        print('\r'+pcosuccess)
         PocSuccess(pcosuccess)
-
+    else:
+        pcosuccess = f"{time_s()}   【{module_name}】{url} ..."
+        print('\r'+'                                                                                                                                ',end='')
+        PrintLog(pcosuccess)
 def loadPoc(url):
     poc_list = []
     module_name_list = os.listdir(os.path.abspath(os.path.dirname(__file__))[:-11]+"attackPoc")
@@ -105,11 +116,11 @@ def goRun(txt,T):
         t.join()
 
 def url_poc(url,poc_name):
-    print(f"{otherStyleTime}   【{poc_name}】RUN:{url} ...")
+    print(f"{time_s()}   【{poc_name}】RUN:{url} ...")
     requests.packages.urllib3.disable_warnings()
     module = __import__(f'attackPoc.{poc_name}', fromlist=['poc'])
     result = module.poc(url)
-    pcosuccess = f"{otherStyleTime}   【{poc_name}】{url} True"
+    pcosuccess = f"{time_s()}   【{poc_name}】{url} True"
     if result == True:
         print(pcosuccess)
         PocSuccess(pcosuccess)

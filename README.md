@@ -57,14 +57,14 @@ python yesPoc.py -r test.txt -s test # 存活测试
 ```
 ___
 
-## -功能日志
+## -功能更新
 | Update details  | Update time          |              
 | ------------- |:-------------|
 | -      |  -  |
 | -      |  -  | 
 ___
 
-## -POC日志
+## -POC更新
 | Module name        | Update time          |              
 | ------------- |:-------------|
 | Apache-Flink-Web-Dashboard-RCE      |  -  |

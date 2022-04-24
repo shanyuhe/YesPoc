@@ -56,7 +56,15 @@ python yesPoc.py -r test.txt -s back # 备份文件
 python yesPoc.py -r test.txt -s test # 存活测试
 ```
 ___
-## -更新日志
+
+## -功能日志
+| Update details  | Update time          |              
+| ------------- |:-------------|
+| -      |  -  |
+| -      |  -  | 
+___
+
+## -POC日志
 | Module name        | Update time          |              
 | ------------- |:-------------|
 | Apache-Flink-Web-Dashboard-RCE      |  -  |

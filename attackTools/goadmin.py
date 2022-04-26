@@ -57,7 +57,7 @@ class myThread(threading.Thread):
 # 定义功能函数，访问固定url地址
 
 admin_list = ['adm','Admin','后台','管理','manage','运营','登录','login','系统']
-admin_dir = ['/admin','/manage','/admin/login','/manage/login','/admin/index','/manage/index','/admin/login/index','/admin/login.php','/manage/index.php']
+admin_dir = ['/admin','/manage','/admin/login','/manage/login','/admin/index','/manage/index','/admin/login/index','/admin/login.php','/manage/index.php','/phpmyadmin']
 def crawler(url_t,ts):
     url_ = url_t.replace('\n', '').replace('\r', '')
     try:
@@ -72,7 +72,7 @@ def crawler(url_t,ts):
             if resuit.status_code <= 399:
                 for admin in admin_list:
                     if admin in title:
-                        log = f'{(time.strftime("%Y-%m-%d %H:%M:%S"))} resuit:  {url}     {title} '
+                        log = f'{(time.strftime("%Y-%m-%d %H:%M:%S"))}   SUCCESS:{url}     {title} '
                         print('\r' + log)
                         PocSuccess(url)
                         break
@@ -108,4 +108,4 @@ def goRun(txt,T):
         t.join()
 
 if __name__ == '__main__':
-    goRun("demo.txt",50)
+    goRun("./所有的.txt",50)

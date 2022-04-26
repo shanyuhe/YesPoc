@@ -47,12 +47,11 @@ if __name__ == '__main__':
             gofzbk.goRun(args.r, T=50)
     elif (args.r != None and args.s == 'test'):
             goLiveTest.goRun(args.r, T=50)
-    elif (args.r != None and args.poc != None):
-            goPoc2.goRun(args.r,args.poc,T=50)
     elif (args.u != None and args.poc == 'all'):
             gopoc.pocPool(args.u)
     elif (args.u != None and args.poc != None):
             gopoc.url_poc(args.u,args.poc)
-
+    elif (args.r != None and args.poc != None):
+            goPoc2.goRun(args.r,args.poc,T=50)
 
 

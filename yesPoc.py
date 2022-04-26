@@ -4,12 +4,13 @@
 # @FIle ： {NAME}
 # @Software : PyCharm
 import argparse
-import sys
 import time
 from  attackTools import gopoc
+from  attackTools import goPoc2
 from  attackTools import gofzbk
 from  attackTools import goadmin
 from  attackTools import goLiveTest
+
 
 
 def logo():
@@ -27,6 +28,9 @@ __ __
     print("  Github   : https://github.com/shanyuhe")
     time.sleep(3)
 
+
+
+
 if __name__ == '__main__':
     logo()
     parser = argparse.ArgumentParser()
@@ -43,12 +47,12 @@ if __name__ == '__main__':
             gofzbk.goRun(args.r, T=50)
     elif (args.r != None and args.s == 'test'):
             goLiveTest.goRun(args.r, T=50)
+    elif (args.r != None and args.poc != None):
+            goPoc2.goRun(args.r,args.poc,T=50)
     elif (args.u != None and args.poc == 'all'):
             gopoc.pocPool(args.u)
     elif (args.u != None and args.poc != None):
             gopoc.url_poc(args.u,args.poc)
-
-
 
 
 

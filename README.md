@@ -3,14 +3,15 @@
         alt="Logo" width="158" height="82" style="max-width: 100%;"></p>
 <h1 align="center">YesPoc</h1>
 <p align="center">Q   Q：2900180755~</p>
-<p align="center">公众号：黑狗白狗都是好狗~</p>
-[![baidu]](http://baidu.com)  
-[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"  
+
 <p align="center">
     <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/python-3-blue.svg" alt="python3" />
     </a>
 </p>
+
+[![点击链接加入群聊【愤青的科学家们】：]](https://jq.qq.com/?_wv=1027&k=ihQXqmNp)  
+[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"  
 一个集和多线程,批量验证,poc验证,存活测试,备份文件探测,后台探测,渗透测试框架。
 
 ***本项目用来交流学习，切勿对未授权往网站进行扫描**

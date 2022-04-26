@@ -1,9 +1,11 @@
 
-([![点击链接加入QQ群聊【愤青的科学家们】：]](https://jq.qq.com/?_wv=1027&k=ihQXqmNp) 
+[![点击链接加入QQ群聊【愤青的科学家们】]](https://jq.qq.com/?_wv=1027&k=ihQXqmNp) 
 <p align="center"><img src="https://qlogo4.store.qq.com/qzone/2900180755/2900180755/100?1640892599"
         alt="Logo" width="158" height="82" style="max-width: 100%;"></p>
 <h1 align="center">YesPoc</h1>
-<p align="center">Q   Q：2900180755~</p>
+<p align="center">公众号：黑狗白狗都是好狗~</p>
+[![baidu]](http://baidu.com)  
+[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"  
 <p align="center">
     <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/python-3-blue.svg" alt="python3" />

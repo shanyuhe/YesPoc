@@ -4,7 +4,8 @@
 <h1 align="center">YesPoc</h1>
 <p align="center">Q   Q：2900180755~</p>
 <p align="center">公众号：黑狗白狗都是好狗~</p>
-
+[![baidu]](http://baidu.com)  
+[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"  
 <p align="center">
     <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/python-3-blue.svg" alt="python3" />

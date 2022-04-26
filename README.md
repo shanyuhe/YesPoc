@@ -54,6 +54,7 @@ python yesPoc.py -r test.txt -s poc # poc扫描
 python yesPoc.py -r test.txt -s admin # 后台探测
 python yesPoc.py -r test.txt -s back # 备份文件
 python yesPoc.py -r test.txt -s test # 存活测试
+python yesPoc.py -r test.txt -poc test # 指定POC测试
 ```
 ___
 
@@ -61,7 +62,7 @@ ___
 | Update details  | Update time          |              
 | ------------- |:-------------|
 | 优化结果展示，和线程问题。   |  2022/04/24  |
-| 优化结果展示。      |  2022/04/26  | 
+| 优化结果展示,和线程问题，曾加新的功能。      |  2022/04/26  | 
 | -      |  -  | 
 
 ___

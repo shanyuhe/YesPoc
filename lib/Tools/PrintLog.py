@@ -5,6 +5,6 @@
 # @Software : PyCharm
 import sys
 
-
+#
 def PrintLog(log):
-    print(f"\r{log}",end="")
+    print(f"\r{log}"+"            ",end="")

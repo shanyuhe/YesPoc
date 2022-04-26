@@ -162,7 +162,7 @@ def requ(url):
         code = requests.head(url=url_u,headers=header[random.randint(0, len(header)-1)],verify=False,timeout=10)
         if code.status_code == 200 and int(code.headers['Content-Length']) > 1079705 :
 
-            log =f'{time_s()}   {url_u}   可能存在备份文件'
+            log =f'{time_s()}   SUCCESS:{url_u} True'
             print('\r' + log)
             print(log,'\n')
             with open(name_txt, mode='a+', encoding='UTF-8-sig') as fp:

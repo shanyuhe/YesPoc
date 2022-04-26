@@ -1,3 +1,4 @@
+
 # -*-codeing = utf-8 -*-
 # @Time : 2022/4/22
 # @Author : 一秋小叶　qq 2900180755
@@ -74,7 +75,7 @@ def attack_Poc(poc_url):
     module = __import__(f'attackPoc.{module_name}', fromlist=['poc'])
     result = module.poc(url)
     if result == True:
-        pcosuccess = f"{time_s()}   【{module_name}】{url} True"
+        pcosuccess = f"{time_s()}      SUCCESS:【{module_name}】{url} True"
         print('\r'+'                                                                                                                                ',end='')
         print('\r'+pcosuccess)
         PocSuccess(pcosuccess)

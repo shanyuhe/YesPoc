@@ -10,6 +10,7 @@ from  attackTools import goPoc2
 from  attackTools import gofzbk
 from  attackTools import goadmin
 from  attackTools import goLiveTest
+from lib.Tools.FileLen import filelen
 
 
 
@@ -35,23 +36,24 @@ if __name__ == '__main__':
     logo()
     parser = argparse.ArgumentParser()
     parser.add_argument('-r', help='导入文本')
-    parser.add_argument('-s', help='-s poc poc扫描 -s admin 后台探测 -s back 备份文件 -s test 存活测试')
     parser.add_argument('-u', help='指定URL')
+    parser.add_argument('-s', help='-s poc poc扫描 -s admin 后台探测 -s back 备份文件 -s test 存活测试')
+    parser.add_argument('-t', help='指定线程数量，可为空，url大于100默认为100,小于一百默认为url数量')
     parser.add_argument('-poc', help='配合-u使用 -poc 模块名称 单个扫描 -poc all 使用全部模块进行扫描')
     args = parser.parse_args()
     if (args.r != None and args.s =='poc'):
-        gopoc.goRun(args.r, T=10)
+        gopoc.goRun(args.r, T=filelen(args.r))
     elif(args.r != None and args.s == 'admin'):
-            goadmin.goRun(args.r, T=50)
+            goadmin.goRun(args.r, T=filelen(args.r))
     elif(args.r != None and args.s == 'back'):
-            gofzbk.goRun(args.r, T=50)
+            gofzbk.goRun(args.r, T=filelen(args.r))
     elif (args.r != None and args.s == 'test'):
-            goLiveTest.goRun(args.r, T=50)
+            goLiveTest.goRun(args.r, T=filelen(args.r))
     elif (args.u != None and args.poc == 'all'):
             gopoc.pocPool(args.u)
     elif (args.u != None and args.poc != None):
             gopoc.url_poc(args.u,args.poc)
     elif (args.r != None and args.poc != None):
-            goPoc2.goRun(args.r,args.poc,T=50)
+            goPoc2.goRun(args.r,args.poc,T=filelen(args.r))
 
 
